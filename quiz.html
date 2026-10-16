@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuiz Hadis | Modul Penghayatan Hadis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">۞</span>
+            <span>Modul Penghayatan Hadis</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu">
+            ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Utama</a>
+            <a href="index.html#pengenalan">Pengenalan</a>
+            <a href="hadis.html">Hadis</a>
+            <a href="quiz.html">Kuiz</a>
+            <a href="index.html#tentang">Tentang</a>
+        </div>
+        
+<button id="theme-toggle" class="theme-toggle" type="button">
+    🌙 Mod Gelap
+</button>
+
+    </nav>
+</header>
+
+
+    <main>
+
+        <section class="hadis-hero">
+
+            <div class="hadis-hero-content">
+
+               <p class="eyebrow">AKTIVITI PEMBELAJARAN</p>
+                    <h1>Kuiz Hadis</h1>
+                <p>
+                    Uji kefahaman anda tentang Hadis 40 melalui
+                 soalan interaktif.
+                 </p>
+
+            </div>
+        </section>
+
+        <section class="quiz-container">
+
+
+    <div id="quiz-selection" class="quiz-selection">
+
+        <div class="selection-intro">
+
+            <p class="selection-label">
+                PILIH AKTIVITI
+            </p>
+
+            <h2>Pilih Kuiz</h2>
+
+            <p>
+                Pilih bahagian Hadis yang ingin anda ulang kaji.
+                Setiap kuiz mengandungi soalan ringkas untuk menguji
+                kefahaman anda.
+            </p>
+
+        </div>
+
+
+        <div class="quiz-options">
+
+            <button class="quiz-option" data-quiz="1-10">
+
+                <span class="quiz-option-number">
+                    01
+                </span>
+
+                <span class="quiz-option-content">
+
+                    <strong>Hadis 1–10</strong>
+
+                    <small>5 soalan</small>
+
+                </span>
+
+                <span class="quiz-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="quiz-option" data-quiz="11-20">
+
+                <span class="quiz-option-number">
+                    02
+                </span>
+
+                <span class="quiz-option-content">
+
+                    <strong>Hadis 11–20</strong>
+
+                    <small>5 soalan</small>
+
+                </span>
+
+                <span class="quiz-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="quiz-option" data-quiz="21-30">
+
+                <span class="quiz-option-number">
+                    03
+                </span>
+
+                <span class="quiz-option-content">
+
+                    <strong>Hadis 21–30</strong>
+
+                    <small>5 soalan</small>
+
+                </span>
+
+                <span class="quiz-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="quiz-option" data-quiz="31-42">
+
+                <span class="quiz-option-number">
+                    04
+                </span>
+
+                <span class="quiz-option-content">
+
+                    <strong>Hadis 31–42</strong>
+
+                    <small>5 soalan</small>
+
+                </span>
+
+                <span class="quiz-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <button class="quiz-option quiz-option-overall" data-quiz="overall">
+
+                <span class="quiz-option-number">
+                    ✦
+                </span>
+
+                <span class="quiz-option-content">
+
+                    <strong>Keseluruhan Hadis</strong>
+
+                    <small>10 soalan daripada Hadis 1–42</small>
+
+                </span>
+
+                <span class="quiz-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="quiz-card" class="quiz-card hidden">
+
+        <div class="quiz-progress">
+            <span id="question-number">
+                Soalan 1 daripada 5
+            </span>
+        
+        <div class="quiz-progress-track">
+            <div id="quiz-progress-bar" class="quiz-progress-fill"></div>
+        </div>
+        </div>
+
+        <h2 id="question-text">
+            Soalan akan dipaparkan di sini.
+        </h2>
+
+
+        <div id="answer-container" class="answer-container">
+        </div>
+
+
+        <div class="quiz-actions">
+
+            <button id="next-button" class="quiz-button" disabled>
+                Seterusnya →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="quiz-result" class="quiz-result hidden">
+
+        <p class="result-label">
+            KEPUTUSAN ANDA
+        </p>
+
+        <h2 id="score-text">
+            0 / 5
+        </h2>
+
+        <p id="result-message">
+            Terima kasih kerana mencuba kuiz.
+        </p>
+
+        <div class="quiz-result-actions">
+
+    <button id="retry-button" class="quiz-button">
+        Cuba Lagi
+    </button>
+
+    <button id="restart-button" class="quiz-button">
+        Pilih Kuiz Lain
+    </button>
+
+</div>
+
+
+        <div id="answer-review" class="answer-review">
+        </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>
+            © 2026 SMK Abu Bakar
+        </p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

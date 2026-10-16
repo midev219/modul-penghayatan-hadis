@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadis | Modul Penghayatan Hadis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">۞</span>
+            <span>Modul Penghayatan Hadis</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu">
+            ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Utama</a>
+            <a href="index.html#pengenalan">Pengenalan</a>
+            <a href="hadis.html">Hadis</a>
+            <a href="quiz.html">Kuiz</a>
+            <a href="index.html#tentang">Tentang</a>
+        </div>
+        
+<button id="theme-toggle" class="theme-toggle" type="button">
+    🌙 Mod Gelap
+</button>
+
+    </nav>
+</header>
+
+    <main>
+        <section class="detail-hero">
+            <p class="eyebrow">KOLEKSI PEMBELAJARAN</p>
+            <h1 id="hadis-title">Hadis 1</h1>
+            <p id="hadis-section">Bahagian Hadis 1–10</p>
+        </section>
+
+        <section class="detail-container">
+
+            <a href="hadis.html" class="back-link">
+                ← Kembali ke Senarai Hadis
+            </a>
+
+            
+        <div class="reading-progress-card">
+            <div>
+              <p id="reading-status">Belum ditandakan sebagai dibaca</p>
+            <button id="mark-read-button" class="mark-read-button">
+                Tandakan telah dibaca
+            </button>
+            </div>
+        </div>
+
+
+            <article class="detail-card">
+                <div class="detail-heading">
+                    <span class="detail-label">TEKS HADIS</span>
+                    <h2>Teks Arab</h2>
+                </div>
+
+                <div class="arabic-text" id="hadis-arabic" lang="ar" dir="rtl">
+                    [Teks Arab yang disahkan akan dimasukkan di sini]
+                </div>
+            </article>
+
+            <article class="detail-card">
+                <div class="detail-heading">
+                    <span class="detail-label">TERJEMAHAN</span>
+                    <h2>Maksud Hadis</h2>
+                </div>
+
+                <p id="hadis-translation">
+                    [Terjemahan Bahasa Melayu daripada bahan asal sekolah]
+                </p>
+            </article>
+
+            <article class="detail-card">
+                <div class="detail-heading">
+                    <span class="detail-label">PEMBELAJARAN</span>
+                    <h2>Pengajaran Hadis</h2>
+                </div>
+
+                <ul id="hadis-lessons">
+                    <li>[Pengajaran pertama]</li>
+                    <li>[Pengajaran kedua]</li>
+                    <li>[Pengajaran seterusnya]</li>
+                </ul>
+            </article>
+
+            <div class="detail-navigation">
+                <a href="#" id="previous-hadis" class="detail-nav-button">
+                    ← Hadis Sebelumnya
+                </a>
+
+                <a href="#" id="next-hadis" class="detail-nav-button">
+                    Hadis Seterusnya →
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            © 2026 SMK Abu Bakar
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

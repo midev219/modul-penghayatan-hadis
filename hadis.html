@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senarai Hadis | Modul Penghayatan Hadis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">۞</span>
+            <span>Modul Penghayatan Hadis</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Buka menu">
+            ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Utama</a>
+            <a href="index.html#pengenalan">Pengenalan</a>
+            <a href="hadis.html">Hadis</a>
+            <a href="quiz.html">Kuiz</a>
+            <a href="index.html#tentang">Tentang</a>
+        </div>
+        
+<button id="theme-toggle" class="theme-toggle" type="button">
+    🌙 Mod Gelap
+</button>
+
+    </nav>
+</header>
+
+    <main>
+        <section class="hadis-hero">
+            <p class="eyebrow">KOLEKSI PEMBELAJARAN</p>
+            <h1>Senarai Hadis</h1>
+            <p>
+                Terokai 42 Hadis Imam Nawawi mengikut
+                bahagian dan pilih hadis untuk dipelajari.
+            </p>
+        </section>
+
+        <section class="hadis-container">
+
+            <div class="hadis-intro">
+                <h2>Koleksi Hadis</h2>
+                <p>
+                    Pilih bahagian di bawah untuk melihat
+                    senarai hadis yang tersedia.
+                </p>
+            </div>
+
+            <!-- Section filters -->
+            <div class="search-box">
+    <label for="hadis-search">Cari Hadis</label>
+    <input
+        type="text"
+        id="hadis-search"
+        placeholder="Cari nombor atau kata kunci..."
+    >
+</div>
+
+<div class="section-filters">
+    <button class="filter-button active" data-section="all">Semua</button>
+    <button class="filter-button" data-section="1-10">Hadis 1–10</button>
+    <button class="filter-button" data-section="11-20">Hadis 11–20</button>
+    <button class="filter-button" data-section="21-30">Hadis 21–30</button>
+    <button class="filter-button" data-section="31-42">Hadis 31–42</button>
+</div>
+
+
+<div class="reading-summary">
+    <p id="reading-count">0 daripada 42 Hadis telah dibaca</p>
+
+    <div class="reading-progress-track">
+        <div id="reading-progress-bar" class="reading-progress-fill"></div>
+    </div>
+</div>
+
+
+            <div class="hadis-grid" id="hadis-list">
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            © 2026 SMK Abu Bakar
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
